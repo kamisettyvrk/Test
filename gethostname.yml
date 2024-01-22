@@ -1,10 +1,10 @@
-- name : Get HostName
+- name: Get HostName
   hosts: all
   tasks:
     - name: Get hostname
       shell: echo $HOSTNAME
       register: result
 
-   - name: Print the var
-     debug:
-       var: result
+    - name: Print the var
+      debug:
+      var: result
