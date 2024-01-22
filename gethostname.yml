@@ -4,3 +4,6 @@
     - name: Get hostname
       shell: echo $HOSTNAME
       register: result
+    - name: Print Value
+      debug:
+        var:  result
